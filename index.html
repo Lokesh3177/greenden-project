@@ -11,9 +11,10 @@
 <body>
     <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl  sticky top-0 z-10 ">
         <h1 class="text-2xl font-bold">GreenDen</h1>
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+        <svg id="menu" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
             <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+
         </svg>
 
 
@@ -24,7 +25,20 @@
         </ul>
 
     </nav>
-<!-- header section -->
+    <!-- sidenav -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 items-center transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        
+        <div class="text-right p-5">
+            <p id="close" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center p-10    ">
+            <li><a href="" class="hover:underline hover:text-black">Home </a></li>
+            <li> <a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li> <a href="contact.html" class="hover:underline hover:text-black">Contact </a></li>
+        </ul>
+
+     </section>
+    <!-- header section -->
     <section class="bg-green-100 p-4 flex justify-center">
         <div>
             <p class="mb-3">We offer you a wide range of Artificial and natural flower</p>
@@ -90,32 +104,36 @@
             </div>
         </div>
     </section>
-<!-- seller section -->
- <section class="mt-5 text-center">
-    <h1 class="text-3xl font-bold">best Seller</h1>
-    <div class="grid grid-cols-2 md:grid-cols-4 mt-8">
-        <div>
-            <img src="./images/bst1.jpg.jpg" alt="rose plant" class="inline">
-            <p> Rose plant</p>
-            <p>$20</p>
+    <!-- seller section -->
+    <section class="mt-5 text-center">
+        <h1 class="text-3xl font-bold">best Seller</h1>
+        <div class="grid grid-cols-2 md:grid-cols-4 mt-8">
+            <div>
+                <img src="./images/bst1.jpg.jpg" alt="rose plant"
+                    class="inline hover:shadow-xl  transform hover:-translate-y-2">
+                <p> Rose plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bst2.jpg.jpg" alt="rose plant"
+                    class="inline  hover:shadow-xl  transform hover:-translate-y-2">
+                <p> Rose plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bst-3.jpg.jpg" class="inline hover:shadow-xl  transform hover:-translate-y-2"
+                    alt="rose plant  ">
+                <p> Rose plant</p>
+                <p>$20</p>
+            </div>
+            <div>
+                <img src="./images/bst-4.jpg.jpg" alt="rose plant"
+                    class="inline  hover:shadow-xl  transform hover:-translate-y-2">
+                <p> Rose plant</p>
+                <p>$20</p>
+            </div>
         </div>
-        <div>
-            <img src="./images/bst2.jpg.jpg" alt="rose plant" class="inline">
-            <p> Rose plant</p>
-            <p>$20</p>
-        </div>
-        <div>
-            <img src="./images/bst-3.jpg.jpg" class="inline" alt="rose plant">
-            <p> Rose plant</p>
-            <p>$20</p>
-        </div>
-        <div>
-            <img src="./images/bst-4.jpg.jpg" alt="rose plant" class="inline">
-            <p> Rose plant</p>
-            <p>$20</p>
-        </div>
-    </div>
- </section>
+    </section>
 
     <!-- review section -->
     <section>
@@ -148,23 +166,25 @@
     </section>
 
     <!-- news letter -->
-     <section class="text-center">
+    <section class="text-center">
         <h1 class="text-3xl font-bold text-center mt-5">join our news letter</h1>
         <p class="text-center"> singup for our email newspaper to get exclusive discount,updates,and mor</p>
-      <div class="">
-        <input type="text" class="border border-black p-2 mt-3 " style="width: 80%;"  >
-        <br>
-        <button class="border border-black bg-black text-white rounded p-2 m-2 hover:underline">subscribe</button>
-      </div>
-     </section>
-     <!-- footer -->
-      <section class="bg-green-100 p-10 flex flex-col gap-5 ">
-        <h1 class=" text-4xl font-bold" >Greenden</h1>
-        
-        <p >Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, mollitia.
+        <div class="">
+            <input type="text" class="border border-black p-2 mt-3 " style="width: 80%;">
+            <br>
+            <button class="border border-black bg-black text-white rounded p-2 m-2 hover:underline">subscribe</button>
+        </div>
+    </section>
+    <!-- footer -->
+    <section class="bg-green-100 p-10 flex flex-col gap-5 ">
+        <h1 class=" text-4xl font-bold">Greenden</h1>
+
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id, mollitia.
         </p>
-        <p >&copy;2021Greenday.com</p>
-      </section>
+        <p>&copy;2021Greenday.com</p>
+    </section>
+
+    <script src="index.js"></script>
 
 
 

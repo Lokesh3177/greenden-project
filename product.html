@@ -10,7 +10,7 @@
 
 <body>
     <!-- products -->
-    <nav class="bg-green-100 p-3 flex items-center justify-between shadow-xl  sticky top-0 z-10 ">
+    <nav  id="menu" class="bg-green-100 p-3 flex items-center justify-between shadow-xl  sticky top-0 z-10 ">
         <h1 class="text-2xl font-bold">GreenDen</h1>
         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
             class="w-6 h-6 md:hidden">
@@ -29,13 +29,13 @@
     <section class="text-center">
         <h1 class="text-4xl font-bold m-5">our products</h1>
         <div>
-            <input type="text" class="border border-black mt-7 p-2  " style="width: 80%;" placeholder="search for a product...">
+            <input id="search"  type="text" class="border border-black mt-7 p-2  " style="width: 80%;" placeholder="search for a product...">
         </div>
     </section>
     <!-- seller section -->
     <section class="mt-5 text-center">
         
-        <div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
+        <div  id="product-container" class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-8">
             <div>
                 <img src="./images/bst1.jpg.jpg" alt="rose plant" class="inline">
                 <p> Rose plant</p>
@@ -43,38 +43,38 @@
             </div>
             <div>
                 <img src="./images/bst2.jpg.jpg" alt="rose plant" class="inline">
-                <p> Rose plant</p>
+                <p> thulasi plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/bst-3.jpg.jpg" class="inline" alt="rose plant">
-                <p> Rose plant</p>
+                <p> lily plant</p>
                 <p>$20</p>
             </div>
             <div>
 
                 <img src="./images/bst-4.jpg.jpg" alt="rose plant" class="inline">
-                <p> Rose plant</p>
+                <p> sunflower plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/bst-3.jpg.jpg" class="inline" alt="rose plant">
-                <p> Rose plant</p>
+                <p> mallipoo plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/bst-4.jpg.jpg" alt="rose plant" class="inline">
-                <p> Rose plant</p>
+                <p> dragon plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/bst2.jpg.jpg" alt="rose plant" class="inline">
-                <p> Rose plant</p>
+                <p> watermelon plant</p>
                 <p>$20</p>
             </div>
             <div>
                 <img src="./images/bst1.jpg.jpg" alt="rose plant" class="inline">
-                <p> Rose plant</p>
+                <p> mango plant</p>
                 <p>$20</p>
             </div>
         </div>
@@ -85,6 +85,21 @@
         <P>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum, atque?</P>
         <p>&copy;2021Greenday.com</p>
       </section>
+       <!-- sidenav -->
+     <section id="sidenav" class="bg-green-100 fixed z-20 top-0 items-center transition-all duration-1000" style="width: 50%; height: 100vh; right: -50%;">
+        
+        <div class="text-right p-5">
+            <p id="close" class="inline cursor-pointer">X</p>
+        </div>
+        <ul class="flex flex-col gap-10 text-gray-600 items-center p-10    ">
+            <li><a href="" class="hover:underline hover:text-black">Home </a></li>
+            <li> <a href="product.html" class="hover:underline hover:text-black">Products</a></li>
+            <li> <a href="contact.html" class="hover:underline hover:text-black">Contact </a></li>
+        </ul>
+
+     </section>
+
+     <script src="product.js"></script>
 </body>
 
 </html>
